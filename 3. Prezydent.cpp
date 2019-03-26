@@ -9,24 +9,21 @@ using namespace std;
         cout << "Podaj swoj wiek.\n";
         cin >> wiek;
 
-        if (wiek>=18)
-        {
-            cout << "Jestes pelnoletni!!!\n";
-        }
-
-        else
+        if (wiek<18)
         {
             cout << "Nie jestes pelnoletni.\n";
         }
 
-        if (wiek>=35)
+        if ((wiek>=18)&&(wiek<35))
         {
-            cout << "Mozesz kandydowac na prezydenta!!!\n";
+            cout << "Jestes pelnoletni, ale nie mozesz kandydowac na prezydeanta\n";
         }
 
-        else
+
+        if (wiek>=35)
         {
-            cout << "Nie mozesz kandydowac na prezydenta.\n";
+            cout << "Jestes pelnoletni i mozesz kandydowac na prezydenta!!!\n";
         }
+
         return 0;
     }
